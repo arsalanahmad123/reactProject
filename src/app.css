@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--image {
+  max-width: 600px;
+  align-self: flex-end;
+}
+
+.hero--heading {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+.hero--text {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+.card {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card--image {
+  width: 200px;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.upper-content {
+  display: flex;
+  align-items: center;
+}
+
+.view-link {
+  margin-left: 20px;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.card:hover .card--badge {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  background-color: orangered;
+  color: white;
+}
+
+.card:hover .star--icon {
+  color: orangered;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card--badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.location--icon {
+  color: orangered;
+}
+
+.card-body {
+  padding: 5% 40px;
+}
+.date-view {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.nav--links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav--link {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.nav--link:hover {
+  background-color: orangered;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 30px;
+}
+
+.form--input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1/ -1;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 9px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.memeImageDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.meme--topText {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 black, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.meme--bottomText {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 black, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Align all boxes in one row */
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Allign formContainer in middle of div of body  */
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-signup {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Align form in middle of formContainer */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#email,
+#password,
+#confirmPassword {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-indent: 5px;
+}
+
+#checkbox {
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#submit {
+  padding: 20px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.DarkMode {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.DarkMode .nav--link {
+  color: #fff;
+}
+
+.heroDark {
+  background-color: #333;
+  color: #fff;
+}
+
+.heroDark .hero--heading {
+  color: #fff;
+}
+
+.heroDark .hero--text {
+  color: #fff;
+}
+
+/* toggle in label designing */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 52px;
+  background-color: red;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+  left: 49px;
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: green;
+}
+
+/* Checkbox vanished */
+.checkbox {
+  display: none;
+}
